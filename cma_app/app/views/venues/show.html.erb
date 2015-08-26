@@ -8,5 +8,5 @@
             <% end %></p>
 
 <br>
-<a href="/events/new">Add Event to Venue</a> 
+<a href="/events/new?venue_id=<%= @venue.id %>">Add Event to Venue</a> 
 <%= link_to 'Delete this post', venue_path , method: :delete %>

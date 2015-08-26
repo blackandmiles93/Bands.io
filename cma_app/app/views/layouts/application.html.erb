@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav>
+		<form action="/events/search" method="GET">
+			<input type="date" name="date">
+			<button>Search</button>
+		</form>
+	</nav>
 
 <%= yield %>
 
