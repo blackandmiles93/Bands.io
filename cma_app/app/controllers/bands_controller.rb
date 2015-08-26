@@ -8,6 +8,7 @@ class BandsController < ApplicationController
 		@band = Band.find(params[:id])
 	end
 
+# the def new means that we are creating a new instance of band in which the information that is provided from the new page adds it to the database.
 	def new
 		@band = Band.new
 	end
@@ -17,6 +18,7 @@ class BandsController < ApplicationController
 		redirect_to bands_path
 	end
 
+# private limits the values coming through so that people cannot add things to your database.
 	private
 
 	def band_params

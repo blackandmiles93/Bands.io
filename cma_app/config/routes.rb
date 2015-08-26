@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'concerts#index'
 
+  # here, this creates the search results page (which will be rendered onto the index page instead of its own page.)
   get '/events/search' => 'events#search'
 
   # Example of regular route:
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
+  # these create the controllers
     resources :concerts
     resources :events
     resources :venues

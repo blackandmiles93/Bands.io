@@ -1,8 +1,8 @@
 <% @events.each  do |e| %>
     <p><%=e.date%></p>
-    <p>Alcahol Served : <% if e.alcohol_served == true %>
-            Yes
-            <% else %>
-            No
-            <% end %></p>
+    <p>Alcohol Served : <% if e.alcohol_served == true %>
+        Yes
+        <% else %>
+        No
+        <% end %></p>
 <%end%>

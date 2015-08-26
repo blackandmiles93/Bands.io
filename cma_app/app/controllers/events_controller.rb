@@ -6,6 +6,7 @@ class EventsController < ApplicationController
 	end
 
 	def index
+		@venue = Venue.all
 		@events = Event.all
 	end
 
